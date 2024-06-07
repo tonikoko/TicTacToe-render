@@ -17,6 +17,6 @@ body {
 }
 @media only screen and (max-width: 768px) {
   body {
-    min-height: 75vh;
+    min-height: 78vh;
   }
 }
