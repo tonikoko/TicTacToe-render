@@ -94,6 +94,13 @@ h2 {
   filter: brightness(80%);
 }
 
+.fakten-text {
+  margin-top: 1rem;
+  padding: 16px;
+  font-size: 24px;
+  border: 1px solid #ff9b71;
+}
+
 /* Square */
 
 .square {
