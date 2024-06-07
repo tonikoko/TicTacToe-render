@@ -1,7 +1,17 @@
 const { createServer } = require("http");
 const { Server } = require("socket.io");
+const express = require("express");
+const cors = require("cors");
 
-const httpServer = createServer();
+const app = express();
+app.use(
+  cors({
+    origin: "https://tictactoe-front.onrender.com",
+    methods: ["GET", "POST"],
+  })
+);
+
+const httpServer = createServer(app);
 const io = new Server(httpServer, {
   cors: {
     origin: "https://tictactoe-front.onrender.com",
