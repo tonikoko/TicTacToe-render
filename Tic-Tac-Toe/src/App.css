@@ -1,0 +1,140 @@
+h1 {
+  font-size: 48px;
+  margin-bottom: 24px;
+}
+h2 {
+  font-size: 28px;
+}
+
+.main-div,
+.start-game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.playOnline {
+  font-weight: 700;
+  border: none;
+  background-color: #ff9b71;
+  color: #2d3047;
+  font-size: 40px;
+  cursor: pointer;
+  padding: 16px 32px;
+  border-radius: 8px;
+  outline: none;
+}
+
+.playOnline:hover {
+  filter: brightness(80%);
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+
+.game-info {
+  display: flex;
+  max-width: 400px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.game-status {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.finished-state {
+  font-size: 28px;
+  text-align: center;
+}
+
+.left,
+.right {
+  background-color: red;
+  background-color: #ff9b71;
+  border-radius: 16px;
+  padding: 8px 16px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.waiting {
+  padding: 8px;
+  text-align: center;
+  font-size: 32px;
+}
+
+.current-move-cross {
+  background-color: #1b998b !important;
+}
+
+.current-move-circle {
+  background-color: #fffd82 !important;
+}
+
+.reload-button {
+  font-weight: 700;
+  background-color: #ff9b71;
+  color: #2d3047;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.reload-button:hover {
+  filter: brightness(80%);
+}
+
+/* Square */
+
+.square {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  background-color: #ff9b71;
+  border-radius: 16px;
+}
+
+.square:empty:not(.not-allowed):hover {
+  cursor: pointer;
+  filter: brightness(80%);
+}
+
+.not-allowed {
+  cursor: not-allowed !important;
+}
+
+.not-allowed:empty:hover {
+  background-color: #ff9b71;
+}
+
+.circle-won {
+  background-color: #fffd82;
+}
+
+.finished-background {
+  filter: brightness(60%);
+}
+
+.cross-won {
+  background-color: #1b998b;
+}
+
+/* SWAL Popup */
+.swal2-confirm {
+  background-color: #ff9b71 !important;
+  color: #2d3047 !important;
+}
+.swal2-cancel {
+  background-color: rgb(166, 166, 166) !important;
+  color: #2d3047 !important;
+}
