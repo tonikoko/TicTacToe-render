@@ -3,7 +3,10 @@ const { Server } = require("socket.io");
 
 const httpServer = createServer();
 const io = new Server(httpServer, {
-  cors: "http://localhost:5173/",
+  cors: {
+    origin: "https://tictactoe-front.onrender.com",
+    methods: ["GET", "POST"],
+  },
 });
 
 const allUsers = {};
